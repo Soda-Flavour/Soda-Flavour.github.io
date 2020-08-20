@@ -405,7 +405,7 @@ pre .k, pre .kd, pre .kn, pre .kp, pre .kr, pre .kt, pre .javascript .function {
 
 .use-motion .menu-item { opacity: 0; }
 
-.post-body { text-align: center; font-family: "Lato", "PingFang SC", "Microsoft YaHei", sans-serif; }
+.post-body { font-family: "Lato", "PingFang SC", "Microsoft YaHei", sans-serif; }
 @media (max-width: 767px) { .post-body { word-break: break-word; } }
 
 .post-body .fancybox img { display: block !important; margin: 0 auto; cursor: pointer; cursor: zoom-in; cursor: -webkit-zoom-in; }
@@ -423,7 +423,7 @@ pre .k, pre .kd, pre .kn, pre .kp, pre .kr, pre .kt, pre .javascript .function {
   .post-body pre .gutter pre { padding-right: 10px; }
   .post-body .highlight { margin-left: 0px; margin-right: 0px; padding: 0; }
   .post-body .highlight .gutter pre { padding-right: 10px; } }
-@media (min-width: 992px) { .posts-expand .post-body { text-align: center; } }
+@media (min-width: 992px) { .posts-expand .post-body { text-align: justify; } }
 .posts-expand .post-body h2, .posts-expand .post-body h3, .posts-expand .post-body h4, .posts-expand .post-body h5, .posts-expand .post-body h6 { padding-top: 10px; }
 .posts-expand .post-body h2 .header-anchor, .posts-expand .post-body h3 .header-anchor, .posts-expand .post-body h4 .header-anchor, .posts-expand .post-body h5 .header-anchor, .posts-expand .post-body h6 .header-anchor { float: right; margin-left: 10px; color: #ccc; border-bottom-style: none; visibility: hidden; }
 .posts-expand .post-body h2 .header-anchor:hover, .posts-expand .post-body h3 .header-anchor:hover, .posts-expand .post-body h4 .header-anchor:hover, .posts-expand .post-body h5 .header-anchor:hover, .posts-expand .post-body h6 .header-anchor:hover { color: inherit; }
@@ -558,7 +558,7 @@ pre .k, pre .kd, pre .kn, pre .kp, pre .kr, pre .kt, pre .javascript .function {
 .links-of-author { margin-top: 20px; }
 
 .links-of-author a { display: inline-block; vertical-align: middle; margin-right: 10px; margin-bottom: 10px; border-bottom-color: #555; font-size: 13px; }
-.links-of-author a:before { display: inline-block; vertical-align: middle; margin-right: 3px; content: " "; width: 4px; height: 4px; border-radius: 50%; background: #ffff3d; }
+.links-of-author a:before { display: inline-block; vertical-align: middle; margin-right: 3px; content: " "; width: 4px; height: 4px; border-radius: 50%; background: #0ddb7d; }
 
 .links-of-blogroll { font-size: 13px; }
 

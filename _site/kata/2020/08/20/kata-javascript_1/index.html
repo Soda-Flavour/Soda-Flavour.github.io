@@ -111,17 +111,17 @@
 
 
 
-<meta name="description" content="This is a highlight test. Normal block alert(&apos;Hello World!&apos;); print &apos;helloworld&apos; Highlight block alert( &apos;Hello, world!&apos; ); print &apos;helloworld&apos; def foo puts &apos;foo&apos; end def foo puts &apos;foo&apos; end 1 2 3 def foo puts &apos;foo&apos; end #include &amp;lt;iostream&amp;gt; using namespace std; void foo(int arg1, int arg2) { } int main() { string str; foo(1, 2); cout &amp;lt;&amp;lt; &quot;Hello World&quot; &amp;lt;&amp;lt; endl; return 0; }">
+<meta name="description" content="A Chain adding function">
 <meta name="keywords" content="Jekyll, NexT">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Highlight Test">
-<meta property="og:url" content="http://localhost:4000/test/2017/07/19/highlight-test/">
+<meta property="og:title" content="Kata - A Chain adding function(문제풀이)">
+<meta property="og:url" content="http://localhost:4000/kata/2020/08/20/kata-javascript_1/">
 <meta property="og:site_name" content="소다맛 블로그">
-<meta property="og:description" content="This is a highlight test. Normal block alert(&apos;Hello World!&apos;); print &apos;helloworld&apos; Highlight block alert( &apos;Hello, world!&apos; ); print &apos;helloworld&apos; def foo puts &apos;foo&apos; end def foo puts &apos;foo&apos; end 1 2 3 def foo puts &apos;foo&apos; end #include &amp;lt;iostream&amp;gt; using namespace std; void foo(int arg1, int arg2) { } int main() { string str; foo(1, 2); cout &amp;lt;&amp;lt; &quot;Hello World&quot; &amp;lt;&amp;lt; endl; return 0; }">
+<meta property="og:description" content="A Chain adding function">
 <meta property="og:locale" content="ko">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Highlight Test">
-<meta name="twitter:description" content="This is a highlight test. Normal block alert(&apos;Hello World!&apos;); print &apos;helloworld&apos; Highlight block alert( &apos;Hello, world!&apos; ); print &apos;helloworld&apos; def foo puts &apos;foo&apos; end def foo puts &apos;foo&apos; end 1 2 3 def foo puts &apos;foo&apos; end #include &amp;lt;iostream&amp;gt; using namespace std; void foo(int arg1, int arg2) { } int main() { string str; foo(1, 2); cout &amp;lt;&amp;lt; &quot;Hello World&quot; &amp;lt;&amp;lt; endl; return 0; }">
+<meta name="twitter:title" content="Kata - A Chain adding function(문제풀이)">
+<meta name="twitter:description" content="A Chain adding function">
 
 
 <script type="text/javascript" id="hexo.configurations">
@@ -154,7 +154,7 @@
 
 
 
-  <title>Highlight Test | 소다맛 블로그</title>
+  <title>Kata - A Chain adding function(문제풀이) | 소다맛 블로그</title>
   
 
 
@@ -268,7 +268,7 @@
   
 
   <article class="post post-type- " itemscope itemtype="http://schema.org/Article">
-    <link itemprop="mainEntityOfPage" href="http://localhost:4000/test/2017/07/19/highlight-test/">
+    <link itemprop="mainEntityOfPage" href="http://localhost:4000/kata/2020/08/20/kata-javascript_1/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="Lee Daejun">
@@ -288,7 +288,7 @@
           <h1 class="post-title" itemprop="name headline">
           
           
-            Highlight Test
+            Kata - A Chain adding function(문제풀이)
           
         </h1>
         
@@ -302,8 +302,8 @@
               
                 <span class="post-meta-item-text">작성일</span>
               
-              <time title="" itemprop="dateCreated datePublished" datetime="2017-07-19T00:00:00+09:00">
-                2017-07-19
+              <time title="" itemprop="dateCreated datePublished" datetime="2020-08-20T00:00:00+09:00">
+                2020-08-20
               </time>
             
 
@@ -326,8 +326,8 @@
               
                 
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/category/#/Test" itemprop="url" rel="index">
-                    <span itemprop="name">Test</span>
+                  <a href="/category/#/Kata" itemprop="url" rel="index">
+                    <span itemprop="name">Kata</span>
                   </a>
                 </span>
 
@@ -377,57 +377,103 @@
 
 
 
-  <p>This is a highlight test.</p>
+  <h1 id="알아야-할-내용">알아야 할 내용</h1>
 
-<h1 id="normal-block">Normal block</h1>
+<ol>
+  <li>‘(소괄호)’의 쓰임에 대해 알아야 한다.</li>
+  <li>원시값과 함수의 동작에 대해 알아야한다.</li>
+</ol>
 
-<div class="highlighter-rouge"><div class="highlight"><table style="margin: 0px"><tbody><tr><td class="gutter"><pre>1</pre></td><td class="code"><pre class="highlight"><code>alert('Hello World!');
+<h1 id="문제">문제</h1>
+
+<ul>
+  <li>(5kyu) - A Chain adding function</li>
+</ul>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><table style="margin: 0px"><tbody><tr><td class="gutter"><pre>1<br/>2<br/>3</pre></td><td class="code"><pre class="highlight"><code><span class="nx">add</span><span class="p">(</span><span class="mi">1</span><span class="p">)(</span><span class="mi">2</span><span class="p">)(</span><span class="mi">3</span><span class="p">);</span> <span class="c1">// 6</span>
+<span class="nx">add</span><span class="p">(</span><span class="mi">1</span><span class="p">)(</span><span class="mi">2</span><span class="p">)(</span><span class="mi">3</span><span class="p">)(</span><span class="mi">4</span><span class="p">);</span> <span class="c1">// 10</span>
+<span class="nx">add</span><span class="p">(</span><span class="mi">1</span><span class="p">)(</span><span class="mi">2</span><span class="p">)(</span><span class="mi">3</span><span class="p">)(</span><span class="mi">4</span><span class="p">)(</span><span class="mi">5</span><span class="p">);</span> <span class="c1">// 15</span>
 </code></pre></td></tr></tbody></table></div></div>
 
-<div class="highlighter-rouge"><div class="highlight"><table style="margin: 0px"><tbody><tr><td class="gutter"><pre>1</pre></td><td class="code"><pre class="highlight"><code>print 'helloworld'
+<h1 id="알아보기">알아보기</h1>
+
+<h3 id="자바스크립트에서의-소괄호">자바스크립트에서의 소괄호</h3>
+
+<p>자바스크립트에서 소괄호<code class="highlighter-rouge">()</code>는 두가지의 기능을 한다.</p>
+
+<ol>
+  <li>그룹핑 연산자</li>
+</ol>
+
+<p>그룹핑 연산자는 소괄호의 평가 결과를 반환한다.</p>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><table style="margin: 0px"><tbody><tr><td class="gutter"><pre>1</pre></td><td class="code"><pre class="highlight"><code><span class="kd">let</span> <span class="nx">a</span> <span class="o">=</span> <span class="p">(</span><span class="mi">1</span> <span class="o">+</span> <span class="mi">3</span><span class="p">);</span>
 </code></pre></td></tr></tbody></table></div></div>
 
-<h1 id="highlight-block">Highlight block</h1>
+<ol>
+  <li>함수 실행</li>
+</ol>
 
-<div class="language-javascript highlighter-rouge"><div class="highlight"><table style="margin: 0px"><tbody><tr><td class="gutter"><pre>1</pre></td><td class="code"><pre class="highlight"><code><span class="nx">alert</span><span class="p">(</span> <span class="s1">'Hello, world!'</span> <span class="p">);</span>
+<p>함수의 끝에 붙는다면 해당 함수를 실행하여 반환한다.
+즉, 함수에서 소괄호는 함수를 실행하겠다란 뜻이 된다.</p>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><table style="margin: 0px"><tbody><tr><td class="gutter"><pre>1<br/>2<br/>3<br/>4<br/>5</pre></td><td class="code"><pre class="highlight"><code><span class="kd">let</span> <span class="nx">fn</span> <span class="o">=</span> <span class="kd">function</span><span class="p">(){</span>
+  <span class="k">return</span> <span class="s1">'Hi'</span><span class="p">;</span>
+<span class="p">}();</span>
+
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">fn</span><span class="p">);</span>  <span class="c1">// Hi</span>
 </code></pre></td></tr></tbody></table></div></div>
 
-<div class="language-python highlighter-rouge"><div class="highlight"><table style="margin: 0px"><tbody><tr><td class="gutter"><pre>1</pre></td><td class="code"><pre class="highlight"><code><span class="k">print</span> <span class="s">'helloworld'</span>
-</code></pre></td></tr></tbody></table></div></div>
+<h3 id="윈시값의-출력">윈시값의 출력</h3>
 
-<div class="language-ruby highlighter-rouge"><div class="highlight"><table style="margin: 0px"><tbody><tr><td class="gutter"><pre>1<br/>2<br/>3</pre></td><td class="code"><pre class="highlight"><code><span class="k">def</span> <span class="nf">foo</span>
-  <span class="nb">puts</span> <span class="s1">'foo'</span>
-<span class="k">end</span>
-</code></pre></td></tr></tbody></table></div></div>
+<p><code class="highlighter-rouge">valueOf()</code>메서드는 특정 객체의 원시 값을 반환한다.
+원시값을 출력은 보통 자동으로 이루어 지기 때문에 호출할 일이 드믈다.</p>
 
-<figure class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="k">def</span> <span class="nf">foo</span>
-  <span class="nb">puts</span> <span class="s1">'foo'</span>
-<span class="k">end</span></code></pre></figure>
+<h1 id="해답">해답</h1>
 
-<figure class="highlight"><pre><code class="language-ruby" data-lang="ruby"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
-2
-3
-</pre></td><td class="code"><pre><span class="k">def</span> <span class="nf">foo</span>
-  <span class="nb">puts</span> <span class="s1">'foo'</span>
-<span class="k">end</span></pre></td></tr></tbody></table></code></pre></figure>
+<p><code class="highlighter-rouge">add(1)</code> 실행 후, <code class="highlighter-rouge">add(2)</code>가 동작하려면, add의 반환이 값을 받는 함수여야 한다.
+함수가 연결적으로 체인이 되게 하기위해 재귀 호출을 한다.</p>
 
-<div class="language-c++ highlighter-rouge"><div class="highlight"><table style="margin: 0px"><tbody><tr><td class="gutter"><pre>1<br/>2<br/>3<br/>4<br/>5<br/>6<br/>7<br/>8<br/>9<br/>10<br/>11<br/>12<br/>13<br/>14<br/>15<br/>16</pre></td><td class="code"><pre class="highlight"><code><span class="cp">#include &lt;iostream&gt;
-</span>
-<span class="k">using</span> <span class="k">namespace</span> <span class="n">std</span><span class="p">;</span>
-
-<span class="kt">void</span> <span class="nf">foo</span><span class="p">(</span><span class="kt">int</span> <span class="n">arg1</span><span class="p">,</span> <span class="kt">int</span> <span class="n">arg2</span><span class="p">)</span>
-<span class="p">{</span>
-
+<div class="language-javascript highlighter-rouge"><div class="highlight"><table style="margin: 0px"><tbody><tr><td class="gutter"><pre>1<br/>2<br/>3<br/>4<br/>5<br/>6<br/>7<br/>8</pre></td><td class="code"><pre class="highlight"><code><span class="kd">function</span> <span class="nx">add</span><span class="p">(</span><span class="nx">n</span><span class="p">){</span>
+  <span class="k">return</span> <span class="kd">function</span><span class="p">(</span><span class="nx">x</span><span class="p">){</span>
+    <span class="k">return</span> <span class="nx">add</span><span class="p">(</span><span class="nx">n</span><span class="o">+</span><span class="nx">x</span><span class="p">);</span>
+  <span class="p">}</span>
 <span class="p">}</span>
 
-<span class="kt">int</span> <span class="nf">main</span><span class="p">()</span>
-<span class="p">{</span>
-  <span class="n">string</span> <span class="n">str</span><span class="p">;</span>
-  <span class="n">foo</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">);</span>
-  <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"Hello World"</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
-  <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
+<span class="nx">add</span><span class="p">(</span><span class="mi">1</span><span class="p">)(</span><span class="mi">2</span><span class="p">);</span> <span class="c1">// 결과값 : [Function]</span>
+
+</code></pre></td></tr></tbody></table></div></div>
+
+<p>결과값이 함수객체인 이유는 우리가 보통 변수에 값을 넣어 선언후 호출하면
+자동으로 프리미티브값(원시값)이 출력되게된다.</p>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><table style="margin: 0px"><tbody><tr><td class="gutter"><pre>1<br/>2<br/>3</pre></td><td class="code"><pre class="highlight"><code><span class="kd">let</span> <span class="nx">num</span> <span class="o">=</span> <span class="mi">123</span><span class="p">;</span>
+
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">hi</span><span class="p">);</span>  <span class="c1">//결과값 123;</span>
+</code></pre></td></tr></tbody></table></div></div>
+
+<p>하지만 <code class="highlighter-rouge">add</code> 함수는 마지막에 함수 호출 소괄호를 마친 후, 전달할 값을 모르기 때문에 함수 객체를 반환한다.
+따라서 함수 호출이 아닐시(끝날때), 값을 반환할 수 있도록 valueOf()값을 설정해주면된다.</p>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><table style="margin: 0px"><tbody><tr><td class="gutter"><pre>1<br/>2<br/>3<br/>4<br/>5<br/>6<br/>7<br/>8<br/>9</pre></td><td class="code"><pre class="highlight"><code><span class="kd">function</span> <span class="nx">add</span><span class="p">(</span><span class="nx">n</span><span class="p">){</span>
+  <span class="kd">let</span> <span class="nx">sum</span> <span class="o">=</span> <span class="kd">function</span><span class="p">(</span><span class="nx">x</span><span class="p">){</span>
+    <span class="k">return</span> <span class="nx">add</span><span class="p">(</span><span class="nx">n</span><span class="o">+</span><span class="nx">x</span><span class="p">);</span>
+  <span class="p">}</span>
+  <span class="nx">sum</span><span class="p">.</span><span class="nx">valueOf</span> <span class="o">=</span> <span class="kd">function</span><span class="p">(){</span>
+    <span class="k">return</span> <span class="nx">n</span><span class="p">;</span>
+  <span class="p">}</span>
+  <span class="k">return</span> <span class="nx">sum</span><span class="p">;</span>
 <span class="p">}</span>
 </code></pre></td></tr></tbody></table></div></div>
+
+<h1 id="참고">참고</h1>
+<blockquote>
+  <p><a href="https://developer.mozilla.org/ko/docs/Web/JavaScript/Reference/Global_Objects/Object/valueOf">MDN - valueOf()</a></p>
+</blockquote>
+
+<blockquote>
+  <p><a href="https://developer.mozilla.org/ko/docs/Web/JavaScript/Reference/Operators">MDN - 식 및 연산자</a></p>
+</blockquote>
 
 
       
@@ -464,22 +510,6 @@
       
 
       
-      
-        <div class="post-nav" id="post-nav-id">
-          <div class="post-nav-next post-nav-item">
-            
-              <a href="/flutter/2017/07/20/flutter/" rel="next" title="-Flutter- 스낵바(SnackBar) 이벤트 중복 방지하기">
-                <i class="fa fa-chevron-left"></i> -Flutter- 스낵바(SnackBar) 이벤트 중복 방지하기
-              </a>
-            
-          </div>
-
-          <span class="post-nav-divider"></span>
-
-          <div class="post-nav-prev post-nav-item">
-            
-          </div>
-        </div>
       
       
 
@@ -557,7 +587,7 @@
           
             <div class="site-state-item site-state-posts">
               <a href="">
-                <span class="site-state-item-count">2</span>
+                <span class="site-state-item-count">1</span>
                 <span class="site-state-item-name">포스트</span>
               </a>
             </div>
@@ -568,7 +598,7 @@
             
             <div class="site-state-item site-state-categories">
               <a href="/categories/">
-                <span class="site-state-item-count">2</span>
+                <span class="site-state-item-count">1</span>
                 <span class="site-state-item-name">카테고리</span>
               </a>
             </div>
@@ -624,7 +654,7 @@
             
               <div class="post-toc-content">
     <ol class=nav>
-      <li class="nav-item nav-level-1"> <a class="nav-link" href="#normal-block"> <span class="nav-number">1</span> <span class="nav-text">Normal block</span> </a> </li> <li class="nav-item nav-level-1"> <a class="nav-link" href="#highlight-block"> <span class="nav-number">2</span> <span class="nav-text">Highlight block</span> </a> </li>
+      <li class="nav-item nav-level-1"> <a class="nav-link" href="#알아야-할-내용"> <span class="nav-number">1</span> <span class="nav-text">알아야 할 내용</span> </a> </li> <li class="nav-item nav-level-1"> <a class="nav-link" href="#문제"> <span class="nav-number">2</span> <span class="nav-text">문제</span> </a> </li> <li class="nav-item nav-level-1"> <a class="nav-link" href="#알아보기"> <span class="nav-number">3</span> <span class="nav-text">알아보기</span> </a> <ol class="nav-child"> <li class="nav-item nav-level-3"> <a class="nav-link" href="#자바스크립트에서의-소괄호"> <span class="nav-number">3.1</span> <span class="nav-text">자바스크립트에서의 소괄호</span> </a> </li> <li class="nav-item nav-level-3"> <a class="nav-link" href="#윈시값의-출력"> <span class="nav-number">3.2</span> <span class="nav-text">윈시값의 출력</span> </a> </li> </ol> </li> <li class="nav-item nav-level-1"> <a class="nav-link" href="#해답"> <span class="nav-number">4</span> <span class="nav-text">해답</span> </a> </li> <li class="nav-item nav-level-1"> <a class="nav-link" href="#참고"> <span class="nav-number">5</span> <span class="nav-text">참고</span> </a> </li>
     </ol>
   </div>
             
